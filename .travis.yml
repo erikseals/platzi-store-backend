@@ -3,7 +3,6 @@ cache:
   directories:
     - node_modules
     - ~/.nmp
-
 node_js:
   - '12'
 git:
@@ -20,7 +19,7 @@ deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 6bf3ab7e-a867-4860-974c-4711adff1db7
+  api_key: ebf443f1-5259-4ee1-99bd-e9b6120c1825
   app: platzi-store-backend777
   on:
     repo: erikseals/platzi-store-backend
