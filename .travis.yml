@@ -1,0 +1,27 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.nmp
+
+node_js:
+  - '12'
+git:
+  depth: 3
+script:
+  - yarn test
+notifications:
+  email:
+    recipients:
+      - erickson_flelly@hotmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 6bf3ab7e-a867-4860-974c-4711adff1db7
+  app: platzi-store-backend777
+  on:
+    repo: erikseals/platzi-store-backend
+
